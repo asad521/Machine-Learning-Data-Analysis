@@ -1,0 +1,8 @@
+blood_sugar=[113,114,155,190,110,159,130,150.117,120,114, 110,200,133,144,122]
+blood_sugar2=[113,114,155,190,110,159,130,150.117,120,114, 110,200,133,144,122]
+plt.hist([blood_sugar,blood_sugar], bins=[80,120,140,160,180,200], rwidth=.95, color= ('g','orange'),
+label=['men','women'])
+plt.xlabel('Sugar range')
+plt.ylabel('Total number of patients')
+plt.title("blood sugar analysis")
+plt.legend()

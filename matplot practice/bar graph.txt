@@ -1,0 +1,10 @@
+revenue=[234,334,66,63]
+revenue=[234,334,66,63]
+profit=[121,182,190,101]
+X = np.arange(len(company))
+plt.bar(X + 0.00 , revenue, color = 'b', width = 0.25)
+plt.bar(X + 0.25, profit, color = 'g', width = 0.25)
+plt.xticks(X,company)
+plt.xlabel('Company', size=14)
+plt.ylabel('Revenue' ,size=14)
+plt.title('US Tech Stock', size=15)

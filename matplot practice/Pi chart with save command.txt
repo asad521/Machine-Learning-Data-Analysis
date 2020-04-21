@@ -1,0 +1,6 @@
+expenses=[1000,3242,5004,6000,2000,3434]
+cat=['Home rent','Electricity','Education','Transport','Others','Entertainment']
+plt.axis('equal')
+plt.pie(expenses,labels=cat, radius=1.5, shadow=True,autopct='%1.1f%%',explode=[0,0,0,0.1,0,0], startangle=180)
+plt.savefig("pichar.png", bbox_inches='tight', optimize=True)
+plt.show()

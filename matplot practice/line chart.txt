@@ -1,0 +1,17 @@
+Y=[50,34,53,34,55,77]
+x=[1,2,3,4,5,6,]
+plt.plot(x,Y, color="green", linewidth=3,linestyle='dotted')
+plt.ylabel('Temperature')
+plt.xlabel('Day')
+plt.title('Weather')
+plt.plot(x,Y, 'bo--', markersize=10, alpha=0.9)
+======Multipline=====
+plt.xlabel("Days")
+plt.ylabel("Temperature")
+plt.title("Weather in Pakistan")
+plt.plot(days,max_t, label='max')
+plt.plot(days,min_t, label='min')
+plt.plot(days,avg_t, label= 'ávg')
+plt.legend(loc= "best", shadow="true", fontsize="large")
+plt.grid()
+plt.axes()
