@@ -1,0 +1,13 @@
+r,c=df.shape
+df.head()
+df.tail()
+df.head(2)
+m2=df[['temperature','day']]
+m1=df['temperature']==df['temperature'].max()
+m3=pd.Series(m1)
+df[m3 & m1]
+
+df[['temperature','day']][df['temperature']==df['temperature'].max()]
+
+m1=df['temperature']==df['temperature'].max()
+df.loc[m1,['temperature','day']]

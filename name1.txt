@@ -1,2 +1,0 @@
-This is version 1 of my project
-I want to change my commit.
