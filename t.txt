@@ -1,0 +1,26 @@
+A=[[1,2,3],[4,5,6],[4,0,67],[4,6,7]]
+num=np.array(A)
+print(num)
+num.ndim # to find dimension
+num.shape # to shape of array 2by3
+num.dtype # to find data stored in numpy
+
+###Different method to creat numpy array
+#numpy.zeros(shape, dtype=float, order='C')
+
+#numpy.zeros(shape, dtype=float, order='C')
+num=np.ones((4,4),dtype=int,order='F') #Can be tuple of single int for 1d
+print(num)
+num.dtype
+num.shape
+#To creat matrix with ones use 
+num=np.ones((4,4),dtype=int,order='F') #Can be tuple 
+#To creat matrix with diagnal values 1 ,use following
+num=np.eye(6,4) #Can be tuple of single int for 1d
+#Kepe in mind, in eye function you cannot pass tuple.only ineger
+#To creat  matrix with your specific diagnal values, use
+# use this 
+num=np.diag([4,5,67,9])
+#To find diagnal values of an matrix ,use follwing command
+np.diag(num)
+print(num)
